@@ -10,10 +10,7 @@ const app = express()
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({
-    origin: "https://schoolmanag.netlify.app",
-    credentials: true
-}))
+app.use(cors())
 app.get("/", (_, res) => {
     res.send("health check server")
 })
