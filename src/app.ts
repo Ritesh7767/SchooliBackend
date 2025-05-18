@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://schoolmanag.netlify.app",
     credentials: true
 }))
 app.get("/", (_, res) => {
